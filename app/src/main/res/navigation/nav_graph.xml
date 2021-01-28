@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@+id/navigation_home">
+
+    <activity
+        android:id="@+id/navigation_home"
+        android:name="com.example.football.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/navigation_barcelona"
+        tools:layout="@layout/fragment_barcelona"
+        android:name="com.fragments.BarcelonaFragment"
+        android:label="BarcelonaFragment" />
+    <fragment
+        android:id="@+id/navigation_madrid"
+        tools:layout="@layout/fragment_realmadrid"
+        android:name="com.fragments.RealmadridFragment"
+        android:label="RealmadridFragment" />
+    <fragment
+        android:id="@+id/navigation_juventus"
+        tools:layout="@layout/fragment_juventus"
+        android:name="com.fragments.JuventusFragment"
+        android:label="JuventusFragment" />
+    <fragment
+        android:id="@+id/navigation_dinamo"
+        tools:layout="@layout/fragment_dinamotbilisi"
+        android:name="com.fragments.DinamotbilisFragment"
+        android:label="DinamotbilisFragment" />
+</navigation>
